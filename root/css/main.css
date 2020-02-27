@@ -18,7 +18,19 @@ body {
 }
 
 .container {
-  padding: 0 3rem;
+  padding: 0 5%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 0 10%;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .container {
+    padding: 0;
+  }
 }
 
 body {
@@ -34,6 +46,12 @@ body {
 .heading__primary {
   font-size: 2.5rem;
   font-weight: 200;
+}
+
+@media only screen and (min-width: 1024px) {
+  .heading__primary {
+    font-size: 3rem;
+  }
 }
 
 .heading__primary span {
@@ -55,8 +73,20 @@ body {
   font-size: 1.8rem;
 }
 
+@media only screen and (min-width: 1024px) {
+  .text__primary {
+    font-size: 2rem;
+  }
+}
+
 .text__secondary {
   margin-bottom: 3rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .text__secondary {
+    font-size: 1.8rem;
+  }
 }
 
 .cards {
@@ -67,15 +97,51 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
   padding: 3rem 0;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1366px) {
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .cards__container {
   border-radius: 10px;
   -webkit-box-shadow: 0 6px 8px rgba(69, 211, 211, 0.1), 0 15px 26px rgba(163, 165, 174, 0.25);
           box-shadow: 0 6px 8px rgba(69, 211, 211, 0.1), 0 15px 26px rgba(163, 165, 174, 0.25);
-  margin: 1.5rem 0;
-  padding: 2rem;
+  margin-bottom: 4rem;
+  padding: 3rem;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1366px) {
+  .cards__container {
+    width: 40rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .cards__container--middle {
+    margin: 0 4rem;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .cards__img {
@@ -120,8 +186,14 @@ body {
 
 .footer {
   background-color: #353535;
-  padding: 1.5rem 0;
+  padding: 1.5rem 1.5rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    font-size: 1.8rem;
+  }
 }
 
 .footer__text {
@@ -137,7 +209,31 @@ body {
 }
 
 .header {
-  padding: 25% 0;
+  padding: 5rem 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header {
+    padding: 5rem 0 0 0;
+  }
 }
 
 .header__head, .header__body {
@@ -146,4 +242,18 @@ body {
 
 .header__head {
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header__body {
+    width: 55%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .header__body {
+    width: 48%;
+    margin: 0 auto;
+  }
 }

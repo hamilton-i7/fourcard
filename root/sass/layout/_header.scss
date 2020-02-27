@@ -1,5 +1,14 @@
 .header {
-    padding: 25% 0;
+    padding: 5rem 0;
+
+    @media only screen and (min-width: 1024px) {
+        @include flexRow(false);
+        @include flexContent($align: center);
+    }
+
+    @media only screen and (min-width: 1366px) {
+        padding: 5rem 0 0 0;
+    }
     
 
     &__head,
@@ -9,5 +18,17 @@
 
     &__head {
         margin-bottom: 2rem;
+    }
+
+    &__body {
+        @media only screen and (min-width: 1024px) {
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        @media only screen and (min-width: 1366px) {
+            width: 48%;
+            margin: 0 auto;
+        }
     }
 }

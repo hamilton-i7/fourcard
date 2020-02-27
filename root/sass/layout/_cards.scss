@@ -1,14 +1,33 @@
 .cards {
     @include flexRow(false);
 
+    height: 100%;
     padding: 3rem 0;
+    width: 100%;
+
+    @media only screen and (min-width: 1366px) {
+        @include flexRow(true);
+        @include flexContent($align: center, $justify: center);
+    }
 
     &__container {
         border-radius: 10px;
         box-shadow: 0 6px 8px rgba($color-cyan, .10),
                     0 15px 26px rgba($color-text, .25);
-        margin: 1.5rem 0;
-        padding: 2rem;
+        margin-bottom: 4rem;
+        padding: 3rem;
+        width: 100%;
+
+        @media only screen and (min-width: 1366px) {
+            width: 40rem;
+        }
+
+        &--middle {
+            @media only screen and (min-width: 1366px) {
+                margin: 0 4rem;
+                width: fit-content;
+            }
+        }
     }
 
     &__img {
