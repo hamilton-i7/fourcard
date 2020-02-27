@@ -1,0 +1,17 @@
+.footer {
+    background-color: $color-dark-gray;
+    padding: 1.5rem 0;
+    text-align: center;
+
+    &__text {
+        color: $color-light-gray;
+        font-weight: 200;
+
+        a:link,
+        a:visited {
+            color: inherit;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+}

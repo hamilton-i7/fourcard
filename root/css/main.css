@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  padding: 0 3.5rem;
+  padding: 0 3rem;
 }
 
 body {
@@ -41,9 +41,99 @@ body {
   font-weight: 600;
 }
 
-.text__primary {
+.heading__secondary {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.text {
   color: #a3a5ae;
+}
+
+.text__primary {
   line-height: 1.8;
+  font-size: 1.8rem;
+}
+
+.text__secondary {
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem 0;
+}
+
+.cards__container {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 6px 8px rgba(69, 211, 211, 0.1), 0 15px 26px rgba(163, 165, 174, 0.25);
+          box-shadow: 0 6px 8px rgba(69, 211, 211, 0.1), 0 15px 26px rgba(163, 165, 174, 0.25);
+  margin: 1.5rem 0;
+  padding: 2rem;
+}
+
+.cards__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#supervisor,
+#team-builder,
+#karma,
+#calculator {
+  border-top-width: 5px;
+  border-top-style: solid;
+}
+
+#supervisor {
+  border-top-color: #45d3d3;
+}
+
+#team-builder {
+  border-top-color: #ea5353;
+}
+
+#karma {
+  border-top-color: #fcaf4a;
+}
+
+#calculator {
+  border-top-color: #549ef2;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.footer__text {
+  color: #cccccc;
+  font-weight: 200;
+}
+
+.footer__text a:link,
+.footer__text a:visited {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .header {

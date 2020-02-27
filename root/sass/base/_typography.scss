@@ -18,7 +18,19 @@ body {
     }
 }
 
-.text__primary {
+.heading__secondary {
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+.text {
     color: $color-text;
+}
+
+.text__primary {
     line-height: 1.8;
+    font-size: 1.8rem;
+}
+
+.text__secondary {
+    margin-bottom: 3rem;
 }
