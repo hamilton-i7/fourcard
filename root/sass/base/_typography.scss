@@ -1,0 +1,24 @@
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.heading {
+    color: $color-heading;
+}
+
+.heading__primary {
+    font-size: 2.5rem;
+    font-weight: 200;
+
+    span {
+        display: block;
+        font-weight: 600;
+    }
+}
+
+.text__primary {
+    color: $color-text;
+    line-height: 1.8;
+}

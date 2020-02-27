@@ -1,0 +1,13 @@
+.header {
+    padding: 25% 0;
+    
+
+    &__head,
+    &__body {
+        text-align: center;
+    }
+
+    &__head {
+        margin-bottom: 2rem;
+    }
+}

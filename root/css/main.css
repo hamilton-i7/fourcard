@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #fafafa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 0 3.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.heading {
+  color: #4c4e61;
+}
+
+.heading__primary {
+  font-size: 2.5rem;
+  font-weight: 200;
+}
+
+.heading__primary span {
+  display: block;
+  font-weight: 600;
+}
+
+.text__primary {
+  color: #a3a5ae;
+  line-height: 1.8;
+}
+
+.header {
+  padding: 25% 0;
+}
+
+.header__head, .header__body {
+  text-align: center;
+}
+
+.header__head {
+  margin-bottom: 2rem;
+}
